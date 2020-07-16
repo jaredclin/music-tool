@@ -4,7 +4,7 @@
 
 given a string, create a sequence of notes using the distance between characters
 
-%7 to prevent notes from jumping from octave to octave
+%7 to prevent notes from jumping across multiple octaves
 
 note[0] = start note
 
