@@ -1,5 +1,25 @@
 # music-tool
 
+## logic:
+
+given a string, create a sequence of notes using the distance between characters
+
+%7 to prevent notes from jumping from octave to octave
+
+note[0] = start note
+
+note[i] = (char[i]-char[i-1]) % 7
+
+examples in C major:
+
+String "ABC", starting at C: C D E
+
+String "ZXV", starting at G: G E C
+
+String "STRING", starting at F: F G E C A A
+
+>S->T = +1, T->R = -2, R->I = -9%7 = -2, I->N = +5, N->G = 7%7 = 0
+
 ## usage:
 - enter key (A-G), append # for sharp option
 - indicate whether it's a minor key
