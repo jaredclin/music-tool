@@ -40,7 +40,7 @@ public class MusicTool {
         System.out.println("Type 'end' to terminate the program.");
 
         while(true) {
-            System.out.println("\nEnter Text:");
+            System.out.print("\nEnter Text: ");
             input = kb.nextLine();
             if(input.equals("restart")) {
                 System.out.print("Enter Key (a-g, #): ");
