@@ -2,7 +2,7 @@ import java.lang.Math;
 
 public class TextTransform {
     //main method traversing through all stages
-  public void transform(Key key, int startnote, String text) {
+  public void transform(KeyDefine key, int startnote, String text) {
     Note [] notes = new Note[text.length()];
     String[] keyNotes = key.notes;
     textToCharValues(notes, text);
