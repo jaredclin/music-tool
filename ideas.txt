@@ -1,0 +1,15 @@
+- use flats alongside with sharps
+
+- change visual representation (current vers has bug when not in C)
+    piano style?
+    CDEFGABC
+    x
+     x
+        x
+      x
+
+- develop android app
+    dropdown for key selection
+    checkbox for minor
+    text field
+    scrollable results
