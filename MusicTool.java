@@ -3,20 +3,7 @@ import java.util.Scanner;
 
 public class MusicTool {    
     public static void main (String[] args) {
-        Scanner kb = new Scanner(System.in);
-        HashMap<String, Integer> keys = new HashMap<String, Integer>();
-        keys.put("C", 0);
-        keys.put("C#", 1);
-        keys.put("D", 2);
-        keys.put("D#", 3);
-        keys.put("E", 4);
-        keys.put("F", 5);
-        keys.put("F#", 6);
-        keys.put("G", 7);
-        keys.put("G#", 8);
-        keys.put("A", 9);
-        keys.put("A#", 10);
-        keys.put("B", 11);
+        Scanner kb = new Scanner(System.in);       
         String input;
         String key = "C";
         Boolean minor = false;
@@ -34,7 +21,7 @@ public class MusicTool {
             minor=true;
         }
         else {minor=false;}
-        k = new Key(keys.get(key.toUpperCase()), minor);
+        k = new Key(key.toUpperCase(), minor);
 
         System.out.println("\nType 'restart' to choose a new key.");
         System.out.println("Type 'end' to terminate the program.");
@@ -53,7 +40,7 @@ public class MusicTool {
                     minor=true;
                 }
                 else {minor=false;}
-                k = new Key(keys.get(key.toUpperCase()), minor);
+                k = new Key(key.toUpperCase(), minor);
                 continue;
             }
             if(input.equals("end")) {
